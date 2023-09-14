@@ -1,6 +1,6 @@
 import express from 'express'
 import dotenv from 'dotenv'
-import userRoutes from './routes/userRoutes.js'
+// import userRoutes from './routes/userRoutes.js'
 import router1 from './routes/addressRoutes.js'
 import bodyParser from 'body-parser'
 
@@ -19,7 +19,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use('/users', userRoutes)
+// app.use('/users', userRoutes)
 app.use('/address', router1)
 
 
