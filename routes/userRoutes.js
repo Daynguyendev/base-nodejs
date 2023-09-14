@@ -11,7 +11,9 @@ import {
 } from '../controllers/userControllers.js'
 
 const router = express.Router()
-
+router.route("/ok").get((req, res, next) => {
+  res.json({ success: 'ok' })
+});
 router.route("/login").post(login);
 router.route("/token").post(checkRefeshToken, refeshToken);
 router.route('/').post(registerUser)
