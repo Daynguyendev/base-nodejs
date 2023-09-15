@@ -20,6 +20,7 @@ const createAddressDB = (data, callBack) => {
 }
 
 const updateAddressDB = (data, callBack) => {
+    console.log('test data', data);
     connectDB.query(
         `update dia_chi_2 set id_khach_hang=?, ten_dia_chi=?, ten_khach_hang=?, sdt_khach_hang=? where id_dia_chi = ?`,
         [

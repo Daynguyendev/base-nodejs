@@ -23,7 +23,7 @@ const createAddress = (req, res) => {
 
 const updateAddress = (req, res) => {
     const body = req.body;
-    console.log(body);
+    console.log('1221', body);
     updateAddressDB(body, (err, results) => {
         if (err) {
             console.log(err);
