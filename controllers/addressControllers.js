@@ -23,6 +23,7 @@ const createAddress = (req, res) => {
 
 const updateAddress = (req, res) => {
     const body = req.body;
+    console.log(body);
     updateAddressDB(body, (err, results) => {
         if (err) {
             console.log(err);
@@ -42,7 +43,8 @@ const updateAddress = (req, res) => {
 }
 
 const deleteAddress = (req, res) => {
-    const userId = req.body;
+    const userId = req.params;
+    console.log('test 123', userId);
     deleteAddressDB(userId, (err, results) => {
         if (err) {
             console.log(err);

@@ -6,7 +6,7 @@ const router1 = express.Router()
 router1.route("/get").get(getAddress);
 router1.route("/post").post(createAddress);
 router1.route("/patch").patch(updateAddress);
-router1.route("/delete").delete(deleteAddress);
+router1.route("/delete/:id_dia_chi").delete(deleteAddress);
 
 export default router1
 
